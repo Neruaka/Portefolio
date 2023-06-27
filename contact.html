@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Primary Meta Tags -->
+    <title>Portfolio - Frederick Toufik</title>
+    <meta name="title" content="Portfolio - Fredeirck Toufik">
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/fontawsome.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='./CSS/Style.css' />
+
+</head>
+
+<body>
+    <!-- Particle JS -->
+    <div id="particles-js"></div>
+    <!-- END -->
+
+    <!-- Sidenav -->
+    <div class="sidenav">
+        <h1 class="title">
+            Frederick Toufik
+        </h1>
+        <ul>
+            <li><a href='index.html'>Page d'acceuil</a></li>
+            <li><a href='about.html'>À propos</a></li>
+            <li><a href='portfolio.html'>Portfolio</a></li>
+            <li><a href='resources.html'>Veille Technologique</a></li>
+            <li><a href='contact.html' class='active'>Contact</a></li>
+        </ul>
+        <p><br></p>
+        <p class="social-medias">
+            <a target="_blank" href="https://facebook.com/Frederick.Toufik"><i class="fab fa-facebook"></i></a>
+            <a target="_blank" href="https://instagram.com/neruaka_"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/frederick-toufik/"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/Neruaka"><i class="fab fa-github"></i></a>
+        </p>
+    </div>
+    <!-- END -->
+
+    <!-- Main Page -->
+    <div class="main-page">
+        <div class="contact container">
+            <h1 class="content-title">
+                <span>Contact</span><br>
+                Me contacter
+            </h1>
+            <div class="notification hidden">
+                Merci pour votre message. Vous aurez une réponse d'ici 72 heures.
+            </div>
+            <form action='' name='Message Me' method='POST'>
+                <input type='hidden' name='form-name' value='Message Me' />
+                <input type="text" name="name" id="name" placeholder="Nom">
+                <input type="email" name="email" id="email" placeholder="Mail">
+                <textarea name="message" id="id" rows="7" placeholder="Message ..."></textarea>
+                <button type="submit" tar>Envoyer</button>
+            </form>
+        </div>
+    </div>
+    <!-- END -->
+
+    <!-- SideNav Button -->
+    <button class="sidenav-activate" onclick="toggle_sidenav()">
+        <span class="indicator hide"><i class="material-icons">close</i></span>
+        <span class="indicator"><i class="material-icons">menu</i></span>
+    </button>
+    <!-- END -->
+    <!-- Scripts -->
+    <script src='js/particle.js'></script>
+    <script>
+        $(() => {
+            if (window.location.hash == "#thankyou") {
+                $('.contact .notification').removeClass("hidden");
+            }
+        });
+    </script>
+</body>
+
+</html>
