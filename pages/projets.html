@@ -20,10 +20,10 @@
                 <i class="fas fa-bars"></i> 
             </button>
             <button id="themeButton">
-                <i class="fas fa-sun" style="display:none;"></i> 
-                <i class="fas fa-moon"></i> 
+                <i class="fas fa-sun"></i> 
+                <i class="fas fa-moon" style="display:none;"></i> 
             </button>
-            <nav class="links closed">
+            <nav class="links closed" id="navLinks">
                 <a href="../index.html">Accueil</a>
                 <a href="../pages/a_propos.html">À propos</a>
                 <a href="../pages/projets.html">Projets</a>
@@ -35,7 +35,7 @@
             <div id="projectsContainer">
                 <!-- Project 1 -->
                 <div class="project">
-                    <img src="/media/pp.jpg" alt="Projet 1">
+                    <img src="/media/lbc.jpg" alt="Projet 1" style="height: 392px;">
                     <div class="project-buttons">
                         <button onclick="openDetailsModal('project1')" class="details-button">Détails</button>
                     </div>
@@ -43,7 +43,7 @@
                     <div id="project1Modal" class="modal">
                         <div class="modal-content">
                             <span class="close" onclick="closeDetailsModal('project1')">&times;</span>
-                            <div class="modal-content-container">
+                            <div class="modal-content-container long">
                                 <h3>Projet PasLeBonCoin</h3>
                                 <div class="details-modal">
                                     <p>Projet axé sur la réalisation d'un site web repliquand le systeme de Le Bon Coin, il est axé sur l'utilisation de bases de données SQL et de PHP.</p>
@@ -69,7 +69,7 @@
                 </div>
                 <!-- Project 2 -->
                 <div class="project">
-                    <img src="/media/pp.jpg" alt="Projet 2">
+                    <img src="/media/discord.jpg" alt="Projet2" style="height: 392px;">
                     <div class="project-buttons">
                         <button onclick="openDetailsModal('project2')" class="details-button">Détails</button>
                     </div>
@@ -77,7 +77,7 @@
                     <div id="project2Modal" class="modal">
                         <div class="modal-content">
                             <span class="close" onclick="closeDetailsModal('project2')">&times;</span>
-                            <div class="modal-content-container">
+                            <div class="modal-content-container long">
                                 <h3>Projet Nerubot</h3>
                                 <div class="details-modal">
                                     <p>Présentation du Projet Bot Discord</p>
@@ -101,75 +101,73 @@
                 </div>
                 <!-- Project 3 -->
                 <div class="project">
-                    <img src="/media/pp.jpg" alt="Projet 2">
+                    <img src="/media/portefolio.png" alt="Projet3" style="height: 392px;">
                     <div class="project-buttons">
-                        <button onclick="openDetailsModal('project2')" class="details-button">Détails</button>
+                        <button onclick="openDetailsModal('project3')" class="details-button">Détails</button>
                         <!-- <a href="https://github.com/yourusername/yourproject" target="_blank" class="github-button">GitHub</a> -->
                         <!-- <a href="https://yourprojectpage.com" target="_blank" class="page-button">Page du Projet</a> -->
                     </div>
-                    <!-- Project 2 Details Modal -->
-                    <div id="project2Modal" class="modal">
+                    <!-- Project 3 Details Modal -->
+                    <div id="project3Modal" class="modal">
                         <div class="modal-content">
-                            <span class="close" onclick="closeDetailsModal('project2')">&times;</span>
+                            <span class="close" onclick="closeDetailsModal('project3')">&times;</span>
                             <div class="modal-content-container">
-                                <h3>Projet Nerubot</h3>
+                                <h3>Mon Portefolio</h3>
                                 <div class="details-modal">
-                                    <p>Projet axé sur la réalisation d'un bot Discord permettant de faire de facons automatique la modération d'un serveur.</p>
-                                    <p> Le projet permet a un utilisateur et a ses membre de jouer de la musique , envoyer des gifs, enregistrer un vocal, et sauvegarder les musiques qui sont joué.</p>
-                                    <p> Un utilisateur aléatoire peut créer un compte et se connecter au site web. Une fois connectés, les utilisateurs peuvent ajouter des produits à leur compte. De plus, les utilisateurs ont la possibilité de marquer des produits avec une étoile, les plaçant dans un dossier "fav" pour une récupération facile sans avoir à parcourir l'ensemble du site web.</p>
-                                    <p> Le projet comprend également une fonctionnalité de chat, permettant la communication entre l'acheteur et le vendeur d'un article.</p>
+                                    <p> Explication de mon processus de veille technologique et des outils utilisés</p>
+                                    <p> Présentation des dernières tendances et innovations dans mon domaine d'expertise.</p>
+                                    <p>Vous souhaitez en savoir plus sur mon travail ou discuter d'une opportunité de projet?</p>
+                                    <p>N'hésitez pas à me contacter à travers le formulaire sur ma page de contact ou directement par email à frederick.toufik@gmail.com</p>
                                 </div>
                             </div>
-                            <a href="https://github.com/Neruaka/Leboncoin" target="_blank" class="details-button github-button" style="color: beige;">GitHub</a>
+                            <a href="https://github.com/Neruaka/portefolio" target="_blank" class="details-button github-button" style="color: beige;">GitHub</a>
                             <!-- <a href="https://yourprojectpage.com" target="_blank" class="details-button page-button" style="color: beige;">Page du Projet</a> -->
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="projectH">fictif</h3>
+                        <h3 class="projectH">Portefolio</h3>
                         <div class="project-stacks">
                             <!-- Replace the placeholder text with Font Awesome icons -->
+                            <i class="fab fa-html5" title="HTML5" style="color: #E44D26; margin-right: 8px;"></i>
+                            <i class="fab fa-css3" title="CSS3" style="color: #1572B6; margin-right: 8px;"></i>
                             <i class="fab fa-js" title="JavaScript" style="color: #F0DB4F; margin-right: 8px;"></i>
-                            <i class="fab fa-node-js" title="NodeJS" style="color: #4479A1; margin-right: 8px;"></i>
                             <!-- Add more icons as needed -->
                         </div>
                     </div>
                 </div>
-                <!-- Project 4 -->
                 <div class="project">
-                    <img src="/media/pp.jpg" alt="Projet 2">
+                    <img src="/media/evelynn.png" alt="Projet4" style="height: 392px;">
                     <div class="project-buttons">
-                        <button onclick="openDetailsModal('project2')" class="details-button">Détails</button>
+                        <button onclick="openDetailsModal('project4')" class="details-button">Détails</button>
                         <!-- <a href="https://github.com/yourusername/yourproject" target="_blank" class="github-button">GitHub</a> -->
                         <!-- <a href="https://yourprojectpage.com" target="_blank" class="page-button">Page du Projet</a> -->
                     </div>
-                    <!-- Project 2 Details Modal -->
-                    <div id="project2Modal" class="modal">
+                    <!-- Project 4 Details Modal -->
+                    <div id="project4Modal" class="modal">
                         <div class="modal-content">
-                            <span class="close" onclick="closeDetailsModal('project2')">&times;</span>
+                            <span class="close" onclick="closeDetailsModal('project4')">&times;</span>
                             <div class="modal-content-container">
-                                <h3>Projet Nerubot</h3>
+                                <h3>Formulaire</h3>
                                 <div class="details-modal">
-                                    <p>Projet axé sur la réalisation d'un bot Discord permettant de faire de facons automatique la modération d'un serveur.</p>
-                                    <p> Le projet permet a un utilisateur et a ses membre de jouer de la musique , envoyer des gifs, enregistrer un vocal, et sauvegarder les musiques qui sont joué.</p>
-                                    <p> Un utilisateur aléatoire peut créer un compte et se connecter au site web. Une fois connectés, les utilisateurs peuvent ajouter des produits à leur compte. De plus, les utilisateurs ont la possibilité de marquer des produits avec une étoile, les plaçant dans un dossier "fav" pour une récupération facile sans avoir à parcourir l'ensemble du site web.</p>
-                                    <p> Le projet comprend également une fonctionnalité de chat, permettant la communication entre l'acheteur et le vendeur d'un article.</p>
+                                    <p>Projet axé sur la réalisation d'un formulaire permettant de valider ma certification responsive web design </p>
+                                    <p>Il s'agit d'un seul projet parmis d'autre qui m'on permis d'avoir ma certification.</p>
+                                    <p>Les autres petit projets sont disponible sur la page de la certification et sont tous heberge sur codepen.</p>
                                 </div>
                             </div>
-                            <a href="https://github.com/Neruaka/Leboncoin" target="_blank" class="details-button github-button" style="color: beige;">GitHub</a>
-                            <!-- <a href="https://yourprojectpage.com" target="_blank" class="details-button page-button" style="color: beige;">Page du Projet</a> -->
+                            <a href="https://codepen.io/neruaka/pen/ExvOWbL" target="_blank" class="details-button github-button" style="color: beige;">Codepen</a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="projectH">Nerubot</h3>
+                        <h3 class="projectH">Portefolio</h3>
                         <div class="project-stacks">
                             <!-- Replace the placeholder text with Font Awesome icons -->
+                            <i class="fab fa-html5" title="HTML5" style="color: #E44D26; margin-right: 8px;"></i>
+                            <i class="fab fa-css3" title="CSS3" style="color: #1572B6; margin-right: 8px;"></i>
                             <i class="fab fa-js" title="JavaScript" style="color: #F0DB4F; margin-right: 8px;"></i>
-                            <i class="fab fa-node-js" title="NodeJS" style="color: #4479A1; margin-right: 8px;"></i>
                             <!-- Add more icons as needed -->
                         </div>
                     </div>
                 </div>
-                <!-- Add similar structure for other projects -->
             </div>
         </div>
         <div class="buttonContainer">
@@ -192,6 +190,7 @@
         <script src="../js/themeswitcherpro.js"></script>
         <script src="../js/cursor.js"></script>
         <script src="../js/dropdown.js"></script>
+        "></script>
     </main>
 </body>
 

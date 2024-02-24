@@ -9,6 +9,24 @@
     --sm-spacing: 30px;
   }
   
+  /* scroll bar */ 
+
+::-webkit-scrollbar{
+  width:12px;
+  }
+  ::-webkit-scrollbar-track {
+  background: var(--bg-color);
+  border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+  background-color: var(--hl-color);
+  border-radius: 10px;
+  border: 3px solid var(--bg-color);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #bfa07a;
+  }
+  
   /* --- ANIMATIONS --- */
   
   @keyframes slideDown {
@@ -483,7 +501,7 @@ button.submit-button:hover {
 }
 
 #themeButton .fa-sun { /* Soleil visible par défaut */
-  display: none; /* Cachez le soleil par défaut */
+  display: inline; /* Cachez le soleil par défaut */
 }
 
 #themeButton.dark .fa-sun { /* Soleil visible en mode sombre */

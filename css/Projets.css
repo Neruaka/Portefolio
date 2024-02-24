@@ -9,6 +9,24 @@
   --sm-spacing: 30px;
   --theme-light-color: #f4f4f4;
 }
+/* scroll bar */ 
+
+::-webkit-scrollbar{
+  width:12px;
+  }
+  ::-webkit-scrollbar-track {
+  background: var(--bg-color);
+  border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+  background-color: var(--hl-color);
+  border-radius: 10px;
+  border: 3px solid var(--bg-color);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #bfa07a;
+  }
+  
 
 /* --- RESETS --- */
 * {
@@ -122,10 +140,12 @@ header {
     margin-right: 20px;
   }
 
-  .links.open {
-    display: flex;
-    margin-top: 3rem;
-  }
+
+  .openMenu,
+.closeMenu {
+  height: 20px;
+  transition: transform 0.5s ease-in-out;
+}
 
   .dropdown-toggle {
     display: none;
@@ -168,7 +188,14 @@ header {
     margin-right: 10px;
   }
 }
-
+.links.open {
+  display: block;
+  animation: slideDown 0.5s ease-in-out forwards;
+}
+img{
+  height: 392px;
+  width: 294px;
+}
 @media (min-width: 941px) {
   .personalImage img {
     height: 330px;
@@ -494,9 +521,7 @@ header {
 }
 
 /* modal */
-body.modal-open {
-  overflow: hidden;
-}
+
 
 body.modal-open::before {
   content: "";
@@ -643,7 +668,7 @@ body.modal-open::before {
 }
 
 #themeButton .fa-sun { /* Soleil visible par défaut */
-  display: none; /* Cachez le soleil par défaut */
+  display: inline; /* Cachez le soleil par défaut */
 }
 
 #themeButton.dark .fa-sun { /* Soleil visible en mode sombre */
@@ -657,4 +682,44 @@ body.modal-open::before {
 #themeButton .fa-sun,
 #themeButton .fa-moon {
   font-size: 28px; /* Ajustez selon vos préférences */
+}
+
+@media screen and (max-width: 1090px) {
+  .long {
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .long {
+    padding-top: 180px;
+  }
+}
+@media screen and (max-width: 687px) {
+  .long {
+    padding-top: 250px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .long {
+    padding-top: 260px;
+  }
+}
+@media screen and (max-width: 612px) {
+  
+  .modal-content-container {
+    padding-top: 100px;
+  }
+  .long {
+    padding-top: 350px;
+  }
+}
+@media screen and (max-width: 602px) {
+  .long {
+    padding-top: 380px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .long {
+    padding-top: 450px;
+  }
 }
