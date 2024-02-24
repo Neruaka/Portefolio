@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Primary Meta Tags -->
-    <title>Portfolio - Frederick Toufik</title>
-    <meta name="title" content="Portfolio - Fredeirck Toufik">
-
-    <!-- CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/fontawsome.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='./CSS/Style.css' />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/nightIndex.css">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="/media/logopng.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frederick Toufik</title>
 </head>
-
 <body>
-    <!-- Particle JS -->
-    <div id="particles-js"></div>
-    <!-- END -->
-
-    <!-- Sidenav -->
-    <div class="sidenav">
-        <h1 class="title">
-            Frederick Toufik
-        </h1>
-        <ul>
-            <li><a href='index.html' class='active'>Page d'acceuil</a></li>
-            <li><a href='about.html'>À propos</a></li>
-            <li><a href='portfolio.html'>Portfolio</a></li>
-            <li><a href='resources.html'>Veille Technologique</a></li>
-            <li><a href='contact.html'>Contact</a></li>
-        </ul>
-        <p><br></p>
-        <p class="social-medias">
-            <a target="_blank" href="https://facebook.com/Frederick.Toufik"><i class="fab fa-facebook"></i></a>
-            <a target="_blank" href="https://instagram.com/neruaka_"><i class="fab fa-instagram"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/frederick-toufik/"><i class="fab fa-linkedin"></i></a>
-            <a target="_blank" href="https://github.com/Neruaka"><i class="fab fa-github"></i></a>
-        </p>
-    </div>
-    <!-- END -->
-
-    <!-- Main Page -->
-    <div class="main-page">
-        <div class="hero container">
-            <h1>Bonjour, moi c'est <br> <span>Frederick Toufik</span></h1>
-            <p>Web Développeur Junior <span>//</span> 22 ans <span>//</span> étudiant</p>
-            <p class="center-align"><a href='about.html' class='button'>COMPETENCES</a> <a href='portfolio.html'
-                    class='button yellow'>PORTFOLIO</a></p>
-        </div>
-    </div>
-    <!-- END -->
-    <!-- SideNav Button -->
-    <button class="sidenav-activate" onclick="toggle_sidenav()">
-        <span class="indicator hide"><i class="material-icons">close</i></span>
-        <span class="indicator"><i class="material-icons">menu</i></span>
-    </button>
-    <!-- END -->
-    <!-- Scripts -->
-    <script src='js/particle.js'></script>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <main class="main" id="main">
+        <header class="header">
+            <button id="burgerMenuButton" class="burger-menu">
+                <i class="fas fa-bars"></i> <!-- Icône de menu burger -->
+            </button>
+            <button id="themeButton">
+                <i class="fas fa-sun" style="display:none;"></i> <!-- Icône Soleil, caché par défaut -->
+                <i class="fas fa-moon"></i> <!-- Icône Lune -->
+            </button>
+            <nav class="links closed" id="navLinks">
+                <a href="/index.html">Acceuil</a>
+                <a href="/pages/a_propos.html">A propos</a>
+                <a href="/pages/projets.html">Projets</a>
+                <a href="/index.html">Veille technologique</a>
+                <a href="/pages/contact.html">Contact</a>
+            </nav>
+        </header>
+        <section class="landing flex flex-col items-center justify-center" style="height: calc(100% - 93px); display: flex; justify-content: center; align-items: center;">
+            <div class="textContainer" style="position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; letter-spacing: 1px; text-align: center; z-index: 1; color: rgb(255, 255, 255); text-shadow: rgb(0, 0, 0) 1px 1px 3px;">
+                <h1 class="name sm:text-lg" style=" font-weight: 600; margin-top: -100px; padding-bottom: 28px;">
+                    Frederick Toufik
+                </h1>
+            </div>
+            <div class="flex justify-center">
+                <p class="text-2xl text-thin colored">
+                    <span id="element"></span>
+                    <span class="typed-cursor" aria-hidden="true">
+                    </span>
+                </p>
+            </div>
+            <div class="socialIcons">
+                <a class="icon" href="https://github.com/Neruaka">
+                    <i class="fa-brands fa-github" aria-hidden="true" title="Github"></i>
+                </a>
+                <a class="icon" href="https://stackoverflow.com/users/22910072/neruaka">
+                    <i class="fa-brands fa-stack-overflow" aria-hidden="true" title="Stack Overflow"></i>
+                </a>
+                <a class="icon" href="https://www.linkedin.com/in/frederick-toufik/">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true" title="LinkedIn"></i>
+                </a>
+            </div>
+        </section>
+        <script>
+          document.querySelector('.burger-menu').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('nav-active');
+});
+        </script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+        <script src="js/typed.js"></script>
+        <script src="js/themeSwitcher.js"></script>
+        <script src="js/cursor.js"></script>
+        <script src="js/dropdown.js"></script>
+    </main>
 </body>
-
 </html>

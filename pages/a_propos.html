@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="EN">
+	<head>
+		<meta charset="UTF-8">
+		<base href="../index.html">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/apropos.css">
+		<link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+		<link rel="icon" href="../media/logopng.png" type="image/x-icon">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>A Propos</title>
+	</head>
+	<body>
+		<main class="main" id="main">
+			<header class="header">
+				<button id="burgerMenuButton" class="burger-menu">
+					<i class="fas fa-bars"></i>
+				</button>
+				<button id="themeButton">
+					<i class="fas fa-sun" style="display:none;"></i> 
+					<i class="fas fa-moon"></i> 
+				</button>
+				<nav class="links closed" id="navLinks">
+					<a href="/index.html" onmouseenter="mouseenter()" onmouseleave="mouseleave()">Acceuil</a>
+					<a href="/pages/a_propos.html" onmouseenter="mouseenter()" onmouseleave="mouseleave()" >A propos</a>
+					<a href="/pages/projets.html" onmouseenter="mouseenter()" onmouseleave="mouseleave()" >Projets</a>
+					<a href="/index.html" onmouseenter="mouseenter()" onmouseleave="mouseleave()" >Veille technologique</a>
+					<a href="/pages/contact.html" onmouseenter="mouseenter()" onmouseleave="mouseleave()" >Contact</a>
+				</nav>
+			</header>
+			<div class="content-wrapper">
+				<div class="tab-navbar">
+					<button class="tab-link" data-target="tab1">Qui suis-je</button>
+					<button class="tab-link" data-target="tab2">BTS SIO</button>
+				</div>
+				<div id="tab1" class="tab-content">
+					<section class="about">
+						<h3 class="pageTitle">Qui suis-je ?</h3>
+						<div class="aboutContainer container">
+							<div class="row">
+								<div class="personalImage" style="opacity: 1; transform: translateX(0vw) translateZ(0px);">
+									<img src="../media/pp.jpg" alt="Frederick Toufik" style="object-fit: cover;">
+									<a href="../path/to/your/CV.pdf" class="btn downloadCV" download="Frederick_Toufik_CV">Télécharger CV</a>
+								</div>
+								<div class="personalInfo" style="opacity: 1; transform: translateX(0vw) translateZ(0px);">
+									<div class="contentContainer">
+										<h4>Enchanté !</h4>
+										<h5 class="font-bold">Je me présente :</h5>
+										<p class="blanc">Frederick, 23 ans, développeur web front-end résidant en Île-de-France. <br>
+											<br> Au fil du temps, ma fascination pour la création et l'informatique s'est exprimée à travers la conception de site web et par le simple fait de me tenir au courant des actualités dans ce domaine. <br>
+											<br> C'est ainsi que j'ai orienté mon parcours vers le domaine de l'informatique, avec une passion particulière pour le développement web. <br>
+											<br> Aujourd'hui, je suis à la recherche d'une opportunité d'alternance pour me plonger davantage dans ce domaine et préparer activement un bachelor.
+										</p>
+										<div class="infoContainer">
+											<h4>Mes coordonnées</h4>
+											<div class="row">
+												<div class="info">
+													<span>Nom :</span>
+													<p>Frederick Toufik </p>
+												</div>
+												<p></p>
+												<div class="info">
+													<span> Email :</span>
+													<p>
+														<a href="mailto:frederick.toufik@gmail.com">frederick.toufik@gmail.com</a>
+													</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="info">
+													<span>Adresse :</span>
+													<p>Champs-sur-Marne, FR</p>
+												</div>
+												<p></p>
+												<div class="info">
+													<span>Statut :</span>
+													<p>Étudiant en développement web</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div id="tab2" class="tab-content" style="display: none;">
+					<section class="about">
+						<h2 class="pageTitle">BTS SIO Option SLAM</h2>
+						<p class="pageDescription">Présentation détaillée de la formation BTS SIO Option SLAM</p>
+						<div class="contentContainer">
+							<div class="contentBlock">
+								<h3>Qu'est-ce que le BTS SIO Option SLAM ?</h3>
+								<p>SLAM (Solutions Logicielles et Applications Métiers) est une option du BTS SIO qui se concentre sur le développement de logiciels et d'applications.</p>
+							</div>
+							<div class="contentBlock">
+								<h3>Programme de la formation</h3>
+								<p>Le programme de la formation comprend des cours de programmation, de gestion de bases de données, de développement web et mobile, de gestion de projets, et de communication professionnelle. Les étudiants apprennent également à comprendre les besoins des clients pour développer des solutions logicielles adaptées.</p>
+							</div>
+							<div class="contentBlock">
+								<h3>Stages et expériences professionnelles</h3>
+								<p>La formation comprend également des stages en entreprise, qui permettent aux étudiants d'acquérir une expérience pratique et de mettre en pratique les compétences qu'ils ont acquises en classe.</p>
+							</div>
+							<div class="contentBlock">
+								<h3>Quels sont les débouchés après un BTS SIO Option SLAM ?</h3>
+								<p>Les diplômés peuvent travailler en tant que développeurs de logiciels, gestionnaires de bases de données, développeurs d'applications web et mobiles, ou poursuivre leurs études dans le domaine de l'informatique.</p>
+							</div>
+							<div class="contentBlock">
+								<h3>Continuer ses études après un BTS SIO Option SLAM</h3>
+								<p>Après un BTS SIO Option SLAM, les étudiants peuvent choisir de poursuivre leurs études en licence professionnelle, en école d'ingénieurs, ou en université pour se spécialiser davantage ou pour obtenir un diplôme de niveau supérieur.</p>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="buttonContainer">
+				<div class="socialIcons">
+					<a class="icon" href="https://github.com/Neruaka" style="text-decoration: none; font-size: 22px; padding: 10px; transition: all 0.2s ease-in 0s;">
+						<i class="fa-brands fa-github" aria-hidden="true" title="Github"></i>
+					</a>
+					<a class="icon" href="https://stackoverflow.com/users/22910072/neruaka" style="text-decoration: none; font-size: 22px; padding: 10px; transition: all 0.2s ease-in 0s;">
+						<i class="fa-brands fa-stack-overflow" aria-hidden="true" title="Stack Overflow"></i>
+					</a>
+					<a class="icon" href="https://www.linkedin.com/in/frederick-toufik/" style="text-decoration: none; font-size: 22px; padding: 10px; transition: all 0.2s ease-in 0s;">
+						<i class="fa-brands fa-linkedin" aria-hidden="true" title="LinkedIn"></i>
+					</a>
+				</div>
+			</div>
+			<script>
+				document.addEventListener('DOMContentLoaded', () => {
+					document.querySelectorAll('.tab-link').forEach(button => {
+						button.addEventListener('click', () => {
+							const targetId = button.getAttribute('data-target');
+							document.querySelectorAll('.tab-content').forEach(tab => {
+								tab.style.display = tab.id === targetId ? 'block' : 'none';
+							});
+						});
+					});
+				});
+			</script>
+			<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+			<script src="../js/typed.js"></script>
+			<script src="../js/themeswitcherap.js"></script>
+			<script src="../js/cursor.js"></script>
+			<script src="../js/dropdown.js"></script>
+		</main>
+	</body>
+</html>

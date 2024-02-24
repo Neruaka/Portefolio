@@ -1,0 +1,281 @@
+/* --- VARIABLES --- */
+:root {
+  --bg-color: #101010;
+  --hl-color: #ad8b61;
+  --text-color: #f3f3f3;
+  --secondary-text-color: #9f9f9f;
+  --grey: #9f9f9f76;
+  --spacing: 50px;
+  --sm-spacing: 30px;
+}
+
+/* --- RESETS --- */
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in 0s;
+}
+
+
+html,
+body,
+#main {
+  height: 100%;
+  background-color: var(--bg-color);
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s ease-in 0s;
+}
+
+/* --- GLOBAL STYLES --- */
+.colored {
+  color: var(--hl-color);
+}
+
+h1 {
+  color: var(--text-color);
+}
+
+.socialIcons .icon {
+  color: var(--text-color);
+  display: flex;
+}
+.icon{
+  font-size: 22px;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.2s ease-in 0s;
+}
+
+.socialIcons .icon:hover {
+  color: var(--hl-color);
+}
+
+@media screen and (max-width: 355px) {
+  .socialIcons .icon {
+    display: none;
+  }
+}
+
+
+.btn {
+  background-color: var(--hl-color);
+  color: white;
+  font-weight: bold;
+  padding: 16px 16px;
+  margin: 16px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* --- HEADER ---  */
+header {
+  padding: var(--sm-spacing) var(--spacing);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.links {
+  display: none;
+  position: absolute;
+  top: 93px;
+  right: 0px;
+  background-color: var(--bg-color);
+  width: 100%;
+  padding: 10px;
+  z-index: 999;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 0.625rem;
+}
+
+.links a:hover {
+  color: var(--hl-color);
+  text-decoration: none;
+}
+
+.links.open {
+  display: block;
+  animation: slideDown 0.5s ease-in-out forwards;
+}
+
+/* --- MEDIA QUERIES --- */
+@media (min-width: 750px) {
+  .links {
+    display: flex;
+    background-color: var(--bg-color);
+    justify-content: flex-end;
+    position: relative;
+    top: auto;
+    left: 0;
+    padding: 0 10px;
+  }
+
+  .links a {
+    padding: 0px;
+    margin-left: 3px;
+  }
+
+  .links a:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .links.open {
+    display: flex;
+    margin-top: 3rem;
+  }
+
+  .dropdown-toggle {
+    display: none;
+  }
+
+  .links a:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--text-color);
+    transition: width 0.3s ease-in-out;
+    text-decoration: none;
+  }
+
+  .links a:hover:before {
+    width: 100%;
+  }
+
+  .closed {
+    background-color: transparent;
+  }
+}
+
+/* --- MOBILE STYLES --- */
+.landing .name {
+  font-size: 48px;
+}
+
+.landingImage {
+  right: 0px;
+}
+
+.landing .socialIcons {
+  display: flex;
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+}
+
+/* --- MEDIA QUERIES --- */
+@media (min-width: 750px) {
+  .landing .name {
+    font-size: 70px;
+  }
+
+  .landingImage {
+    bottom: 0;
+    right: 80px;
+  }
+
+  .landing .socialIcons {
+    flex-direction: column;
+  }
+}
+
+.burger-menu {
+  display: none; 
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  top: 20px; /* Ajusté pour mieux positionner le bouton */
+  right: 20px;
+  z-index: 10; /* Assurez-vous qu'il est au-dessus d'autres éléments */
+}
+
+.burger-menu div {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #333;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+  display: none;
+}
+
+.burger-menu i {
+  color: var(--text-color); /* Assurez-vous que l'icône est visible */
+  font-size: 28px; /* Ajustez la taille de l'icône burger ici */
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-active {
+  display: block;
+}
+
+
+
+@media (max-width: 750px) {
+    .burger-menu {
+        display: flex; /* ou 'block', selon votre préférence */
+        flex-direction: column;
+        justify-content: space-around;
+        width: 2rem;
+        height: 2rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        position: absolute;
+        top: 20px; /* Ajustez en fonction de la mise en page */
+        right: 20px;
+        z-index: 10;
+    }
+
+    .burger-menu i {
+        color: var(--text-color); /* Assurez-vous que l'icône est visible */
+        font-size: 28px; /* Ajustez la taille de l'icône burger ici */
+    }
+}
+
+#themeButton .fa-sun { /* Soleil visible par défaut */
+  display: none; /* Cachez le soleil par défaut */
+}
+
+#themeButton.dark .fa-sun { /* Soleil visible en mode sombre */
+  display: inline;
+}
+
+#themeButton.dark .fa-moon { /* Lune cachée en mode sombre */
+  display: none;
+}
+
+#themeButton .fa-sun,
+#themeButton .fa-moon {
+    font-size: 28px; /* Ajustez selon vos préférences */
+}
+
