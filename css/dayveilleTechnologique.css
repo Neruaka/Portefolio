@@ -1,0 +1,21 @@
+@import url('dayapropos.css'); /* Importe les styles globaux depuis votre fichier CSS existant */
+@import url('returntop.css');
+/* Styles spécifiques à la page de veille technologique */
+.veille {
+    padding: 20px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.veille .pageTitle {
+    color: var(--hl-color);
+    margin-bottom: 20px;
+}
+
+.contentContainer p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Assurez-vous que tous les autres styles nécessaires sont inclus ou importés */

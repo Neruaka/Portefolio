@@ -127,24 +127,17 @@
 					</a>
 				</div>
 			</div>
-			<script>
-				document.addEventListener('DOMContentLoaded', () => {
-					document.querySelectorAll('.tab-link').forEach(button => {
-						button.addEventListener('click', () => {
-							const targetId = button.getAttribute('data-target');
-							document.querySelectorAll('.tab-content').forEach(tab => {
-								tab.style.display = tab.id === targetId ? 'block' : 'none';
-							});
-						});
-					});
-				});
-			</script>
+			<script src="../js/switchTab.js"></script>
 			<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 			<script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
 			<script src="./js/typed.js"></script>
 			<script src="./js/themeswitcherap.js"></script>
 			<script src="./js/cursor.js"></script>
 			<script src="./js/dropdown.js"></script>
+			<script src="../js/returntop.js"></script>
 		</main>
+		<a href="#" class="retour-haut">
+			<i class="fas fa-arrow-up"></i>
+		</a>
 	</body>
 </html>

@@ -1,3 +1,4 @@
+@import url('returntop.css');
 /* --- VARIABLES --- */
 :root {
   --bg-color: #101010;
@@ -167,16 +168,7 @@ header {
   cursor: pointer;
 }
 
-.openMenu,
-.closeMenu {
-  height: 20px;
-  transition: transform 0.5s ease-in-out;
-}
 
-.closeMenu {
-  transform: rotate(180deg);
-  cursor: pointer;
-}
 
 .links .closed {
   background-color: transparent;

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/veilleTechnologique.css">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="../media/logopng.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Veille Technologique sur l'Impression 3D</title>
+</head>
+<body>
+    <main class="main" id="main">
+        <header class="header">
+            <button id="burgerMenuButton" class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button id="themeButton">
+                <i class="fas fa-sun"></i> 
+                <i class="fas fa-moon" style="display:none;"></i> 
+            </button>
+            <nav class="links closed" id="navLinks">
+                <a href="/index.html" onmouseenter="mouseenter()" onmouseleave="mouseleave()">Accueil</a>
+                <a href="/pages/a_propos.html" onmouseenter="mouseenter()" onmouseleave="mouseleave()" >A propos</a>
+                <a href="/pages/projets.html" onmouseenter="mouseenter()" onmouseleave="mouseleave()" >Projets</a>
+                <a href="/pages/veilleTechnologique.html" onmouseenter="mouseenter()" onmouseleave="mouseleave()" >Veille technologique</a>
+                <a href="/pages/contact.html" onmouseenter="mouseenter()" onmouseleave="mouseleave()" >Contact</a>
+            </nav>
+        </header>
+        <div class="content-wrapper">
+            <div class="tab-navbar">
+                <button class="tab-link" data-target="tab1">Introduction</button>
+                <button class="tab-link" data-target="tab2">Articles</button>
+            </div>
+            <div id="tab1" class="tab-content">
+            <section class="veille">
+                <h3 class="pageTitle">Veille technologique sur l'impression 3D</h3>
+                <div class="contentContainer">
+                    <h4>Introduction à l'Impression 3D</h4>
+                    <p>
+                        L'impression 3D, également connue sous le nom de fabrication additive, est une technologie révolutionnaire qui permet de créer des objets tridimensionnels à partir d'un fichier numérique. Elle utilise un processus de superposition de matériaux, couche par couche, pour construire l'objet désiré. Cette technologie, apparue dans les années 1980, a gagné en popularité et en accessibilité au fil des ans, trouvant des applications dans divers secteurs, allant de la médecine à l'aérospatiale. Cet article explore ce qu'est l'impression 3D, ses utilisations, ses limites, son accessibilité et son futur.</p>
+                    <h4>Quest-ce que l'impression 3D</h4>
+                    <p>L'impression 3D est un processus qui crée des objets physiques à partir d'un modèle numérique en ajoutant successivement des matériaux couche par couche. Cette technique diffère des méthodes de fabrication soustractive, où les pièces sont produites en enlevant du matériau d'un bloc solide. L'impression 3D offre une flexibilité de conception sans précédent, permettant la création de formes complexes qui seraient autrement difficiles ou impossibles à réaliser avec des méthodes traditionnelles.</p>
+                    <h4>Dans quoi est-elle utilisée?</h4>
+                    <p>Les applications de l'impression 3D sont vastes et touchent presque tous les secteurs imaginables :</p>
+                        <ul>
+                            <li> - Médical : Fabrication de prothèses sur mesure, d'implants, de modèles anatomiques pour la formation chirurgicale, et même de tissus et organes via la bio-impression.</li>
+                            <li> - Aérospatiale et Automobile : Production de pièces légères et complexes pour réduire le poids et améliorer l'efficacité du carburant.</li>
+                            <li> - Construction : Création de structures et de bâtiments à travers des techniques d'impression 3D à grande échelle.</li>
+                            <li> - Éducation : Aide à l'apprentissage par la visualisation et la manipulation d'objets imprimés en 3D.</li>
+                            <li> - Art et Mode : Conception de pièces uniques et complexes qui défient les méthodes de fabrication traditionnelles.</li>
+                        </ul>
+                    <h4>Quelles sont ses limites?</h4>
+                    <p>Bien que l'impression 3D offre de nombreux avantages, elle présente également des limites :</p>
+                        <ul>
+                            <li> - Vitesse : Le processus peut être lent, surtout pour les objets de grande taille ou très détaillés.</li>
+                            <li> - Coût : Les imprimantes 3D haut de gamme et les matériaux spéciaux peuvent être coûteux.</li>
+                            <li> - Résistance des matériaux : Les objets imprimés en 3D peuvent ne pas être aussi solides ou durables que ceux fabriqués par des méthodes traditionnelles.</li>
+                            <li> - Résistance des matériaux : Les objets imprimés en 3D peuvent ne pas être aussi solides ou durables que ceux fabriqués par des méthodes traditionnelles.</li>
+                        </ul>
+                    <h4>Est-elle accessible?</h4>
+                    <p>L'accessibilité de l'impression 3D a considérablement augmenté ces dernières années. Les imprimantes 3D sont désormais disponibles dans une large gamme de prix, rendant cette technologie accessible aux hobbyistes, aux éducateurs et aux petites entreprises. De plus, des services d'impression 3D en ligne permettent à ceux qui ne possèdent pas d'imprimante de commander des objets imprimés en 3D personnalisés.</p>
+                    <h4>Impact Économique et Environnemental</h4>
+                    <p>
+                        L'impression 3D présente des avantages significatifs en termes d'impact économique et environnemental, principalement grâce à la réduction des déchets. Contrairement aux méthodes traditionnelles de fabrication soustractive, elle utilise seulement la quantité de matériau nécessaire, limitant ainsi les déchets industriels. Elle encourage également l'optimisation des conceptions, permettant la fabrication de pièces plus légères qui améliorent l'efficacité énergétique et réduisent la consommation de carburant dans des secteurs comme l'aérospatiale et l'automobile. De plus, l'exploration de l'utilisation de matériaux recyclés pour l'impression 3D favorise une économie plus circulaire, bien que des défis demeurent en termes de qualité et de disponibilité de ces matériaux. Cependant, l'impact sur les émissions de carbone de l'impression 3D est complexe, car bien que la production à la demande puisse réduire les émissions de transport, les imprimantes peuvent être énergivores. L'impact carbone total dépendra donc de plusieurs facteurs, y compris le type d'énergie utilisée.</p>
+                    <h4>Qu'en est-il du futur de cette technologie?</h4>
+                    <p>Le futur de l'impression 3D semble prometteur et pourrait transformer de nombreux aspects de notre vie quotidienne et de notre économie. La recherche continue d'étendre les matériaux utilisables, d'améliorer la vitesse et la précision des imprimantes, et de trouver de nouvelles applications. Par exemple, la bio-impression 3D progresse vers la création de tissus et d'organes fonctionnels pour les transplantations médicales, ce qui pourrait résoudre la pénurie d'organes. Dans le secteur de la construction, l'impression 3D promet de réduire les coûts et d'améliorer l'efficacité, tout en permettant des designs architecturaux innovants.</p>
+                    <h4>Conclusion</h4>
+                    <p>En conclusion, l'impression 3D est une technologie en pleine expansion qui révolutionne la façon dont nous concevons et fabriquons des objets. Bien qu'elle ait ses limites, ses applications continuent de croître, rendant son futur à la fois excitant et prometteur. Sa capacité à personnaliser les produits et à innover dans des domaines tels que la médecine et la construction suggère que l'impression 3D jouera un rôle clé dans l'avenir de la fabrication et au-delà.</p>
+                </div>
+            </section>
+        </div>
+            <div id="tab2" class="tab-content" style="display: none;">
+                <section class="about">
+                    <h2 class="pageTitle">Suivi de veille Impression 3D</h2>
+                    <div class="contentContainer" >
+                        <div class="contentBlock" style="display: flex;">
+                            <div class="textual" style="display: flex; flex-direction: column;">
+                                <h3>Puma Mostro, la chaussure imprime en 3D</h3>
+                                <p>La célèbre marque Puma a récemment fait sensation à la Fashion Week de New York en réintroduisant sa basket Mostro emblématique de 1999, cette fois avec une touche moderne grâce à l'impression 3D.</p>    
+                                <p>Article : <a target="_blank" href="https://www.3dnatives.com/basket-puma-fashion-week-new-york-21022024/" style="border-bottom: solid 3px var(--text-color);">Cliquez Ici</a></p>
+                            </div>
+                            <img class="img_article" src="../media/Mostro.jpg" alt="PUMA" style="width: 50%;">
+                        </div>
+                        <div class="contentBlock" style="display: flex;">
+                            <div class="textual" style="display: flex; flex-direction: column;">
+                                <h3>Les solutions d’impression 3D en podologie</h3>
+                                <p>Les solutions d’impression 3D dans le domaine de la podologie offrent un moyen innovant d’améliorer l’efficacité du cabinet en accordant plus de temps aux praticiens dans la prise en charge des patients, et en leur permettant d’intégrer davantage de patients dans leur emploi du temps. L’impression 3D, notamment en podologie, est une réelle avancée pour les patients mais aussi les professionnels de santé.</p>    
+                                <p>Article : <a target="_blank" href="https://www.prodways-group.com/blog/les-bonnes-raisons-dintroduire-la-solution-dimpression-3d-en-podologie/" style="border-bottom: solid 3px var(--text-color);">Cliquez Ici</a></p>
+                            </div>
+                            <img class="img_article" src="../media/pied.webp" alt="PUMA" style="width: 50%;">
+                        </div>
+                        <div class="contentBlock" style="display: flex;">
+                            <div class="textual" style="display: flex; flex-direction: column;">
+                                <h3>FiloBot, le robot qui s’allonge de lui-même pour explorer, sous forme d’un tube, des zones difficiles d’accès.</h3>
+                                <p>Le skototropisme, vous connaissez ? C'est la capacité d’une plante à être attirée par l’ombre, illustrée par la propension du lierre à grimper facilement. Une propriété qui pourrait aussi soulager la vie des industriels. Des chercheurs italiens s'en sont inspirés pour concevoir... un robot imprime en 3d. </p>    
+                                <p>Article : <a target="_blank" href="https://www.usinenouvelle.com/editorial/tel-une-plante-grimpante-ce-robot-grandit-pour-explorer-des-zones-inaccessibles.N2206925" style="border-bottom: solid 3px var(--text-color);">Cliquez Ici</a></p>
+                            </div>
+                            <img class="img_article" src="../media/robot.jpg"  alt="PUMA" style="width: 50%;">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="buttonContainer">
+            <div class="socialIcons">
+                <a class="icon" href="https://github.com/Neruaka" style="text-decoration: none; font-size: 22px; padding: 10px; transition: all 0.2s ease-in 0s;">
+                    <i class="fa-brands fa-github" aria-hidden="true" title="Github"></i>
+                </a>
+                <a class="icon" href="https://stackoverflow.com/users/22910072/neruaka" style="text-decoration: none; font-size: 22px; padding: 10px; transition: all 0.2s ease-in 0s;">
+                    <i class="fa-brands fa-stack-overflow" aria-hidden="true" title="Stack Overflow"></i>
+                </a>
+                <a class="icon" href="https://www.linkedin.com/in/frederick-toufik/" style="text-decoration: none; font-size: 22px; padding: 10px; transition: all 0.2s ease-in 0s;">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true" title="LinkedIn"></i>
+                </a>
+            </div>
+        </div>
+    
+    <!-- Bouton Retour en Haut -->
+    <a href="#" class="retour-haut" style="display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="../js/typed.js"></script>
+    <script src="../js/themeswitcherveille.js"></script>
+    <script src="../js/cursor.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/returntop.js"></script>
+    <script src="../js/switchTab.js"></script>
+</main>
+</body>
+</html>

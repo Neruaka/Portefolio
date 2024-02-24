@@ -1,0 +1,24 @@
+/* Bouton Retour en Haut */
+.retour-haut {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: var(--hl-color); /* Couleur de fond */
+    color: var(--bg-color); /* Couleur de l'icône */
+    border-radius: 10px; /* Bordures légèrement arrondies */
+    text-align: center;
+    line-height: 45px; /* Hauteur identique à la largeur pour un design carré */
+    width: 45px; /* Largeur du bouton */
+    height: 45px; /* Hauteur du bouton */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transition douce pour le survol */
+}
+
+.retour-haut:hover {
+    background-color: var(--text-color); /* Couleur de fond au survol */
+    color: var(--hl-color); /* Couleur de l'icône au survol */
+}
+
+.retour-haut i {
+    font-size: 20px; /* Taille de l'icône */
+}
